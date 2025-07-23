@@ -1,0 +1,261 @@
+{
+	"info": {
+		"_postman_id": "6e95db34-3e53-4d9d-9915-ca1da1e38098",
+		"name": "TestDamanin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46248538"
+	},
+	"item": [
+		{
+			"name": "POST_notarius",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "truestrongpassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "realuser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Алексей\",\r\n  \"patronymic\": \"Владиславович\",\r\n  \"surname\": \"Даманин\",\r\n  \"phone\": \"+79273765666\",\r\n  \"email\": \"fafanafaloqq@gmail.com\",\r\n  \"address\": \"367000, г Махачкала, ул Магомета Гаджиева, д 116\",\r\n  \"refovod_code\": \"334\",\r\n  \"password\": \"supersecurepass\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://go.dev-01.ru/api/v1/account",
+					"protocol": "https",
+					"host": [
+						"go",
+						"dev-01",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"account"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Алексей\",\r\n  \"patronymic\": \"Владиславович\",\r\n  \"surname\": \"Даманин\",\r\n  \"phone\": \"+79273765666\",\r\n  \"email\": \"977jacquelyn@mechanicspedia.com\",\r\n  \"address\": \"367000, г Махачкала, ул Магомета Гаджиева, д 116\",\r\n  \"refovod_code\": \"334\",\r\n  \"password\": \"supersecurepass\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://go.dev-01.ru/api/v1/account/register",
+							"protocol": "https",
+							"host": [
+								"go",
+								"dev-01",
+								"ru"
+							],
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Tracking-Ref",
+							"value": "<0.22094.1151>"
+						},
+						{
+							"key": "X-Execution-Time",
+							"value": "2214918"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=3, max=5"
+						},
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 22 Jul 2025 14:39:23 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"login_link\": \"https://go.dev-01.ru/login_check?user=977jacquelyn@mechanicspedia.com&expires=1753195763&hash=utbphHZc4xJyKaZGfJh2K6kY18B2EwMdC5XKYv8uBr0~YZEAE8t042cCnCaKRzIoLROtFjXiYcoe34cu6pfVX3Y~\"\n}"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Алексей\",\r\n  \"patronymic\": \"Владиславович\",\r\n  \"surname\": \"Даманин\",\r\n  \"phone\": \"+79273765666\",\r\n  \"email\": \"977jacquelyn@mechanicspedia.com\",\r\n  \"address\": \"367000, г Махачкала, ул Магомета Гаджиева, д 116\",\r\n  \"refovod_code\": \"334\",\r\n  \"password\": \"supersecurepass\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://go.dev-01.ru/api/v1/account/register",
+							"protocol": "https",
+							"host": [
+								"go",
+								"dev-01",
+								"ru"
+							],
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"register"
+							]
+						}
+					},
+					"status": "Conflict",
+					"code": 409,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Tracking-Ref",
+							"value": "<0.1437.1124>"
+						},
+						{
+							"key": "X-Execution-Time",
+							"value": "291558"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=3, max=5"
+						},
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 22 Jul 2025 15:03:01 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"reason\": \"Аккаунт с таким email уже зарегистрирован\"\n}"
+				}
+			]
+		},
+		{
+			"name": "check",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "username=977jacquelyn@mechanicspedia.com  \r\npassword=supersecurepass\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://go.dev-01.ru/api/v1/account/login_check",
+					"protocol": "https",
+					"host": [
+						"go",
+						"dev-01",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"account",
+						"login_check"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
